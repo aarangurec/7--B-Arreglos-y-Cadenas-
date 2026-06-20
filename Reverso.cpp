@@ -4,6 +4,7 @@ using namespace std;
 int main() {
     int n, A[50];
     cin >> n;
+   
     for (int i = 0; i < n; i++) {
         cin >> A[i];
     }
@@ -12,8 +13,5 @@ int main() {
         if (i > 0) cout << " ";
     }
     cout << endl;
-
     return 0;
-
-
 }
