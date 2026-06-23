@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int P, A, F[100];
+    int P, A, F[100]={0};
     cout<<"Alumnos: ";
     cin >> A;
     cout<<"Profesores: ";
@@ -11,11 +11,9 @@ int main(){
        cin >> V;
        F[V]++;
    };
-
-
-
-
-
+   for (int i = 1; i <= P; i++) {
+       cout << i << "-" << F[i] << "\n";
+   };
 
     return 0;
 }
