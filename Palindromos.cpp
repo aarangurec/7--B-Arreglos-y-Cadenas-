@@ -1,20 +1,22 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main() {
-    int n, lg;
-    string A[10];
+    int n;
     cin >> n;
-    for (int i = 0; i < n; i++) {
-        cin >> A[i];
-    }
-for (int i = 0; i < n; i++) {
-        lg = A[i].length();
-        bool esPalindromo = true;
 
-        for (int j = 0; j < int(lg / 2); j++) {
-            if (A[i][j] != A[i][lg - j - 1]) {
+    for (int t = 0; t < n; t++) {
+        char palabra[1000];
+        cin >> palabra;
+
+        int lg = 0;
+        while (palabra[lg] != '\0') {
+            lg++;
+        }
+
+        bool esPalindromo = true;
+        for (int j = 0; j < lg / 2; j++) {
+            if (palabra[j] != palabra[lg - j - 1]) {
                 esPalindromo = false;
                 break;
             }
@@ -26,8 +28,7 @@ for (int i = 0; i < n; i++) {
             cout << "NP\n";
         }
     }
-cout<<"Ejemplo";
-    return 0;
-    }
 
+    return 0;
+}
     
