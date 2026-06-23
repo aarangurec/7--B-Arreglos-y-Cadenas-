@@ -6,7 +6,11 @@ int main(){
     cin >> A;
     cout<<"Profesores: ";
     cin >> P;
-
+    for (int i = 0; i < A; i++) {
+       int V;
+       cin >> V;
+       F[V]++;
+   };
 
 
 
