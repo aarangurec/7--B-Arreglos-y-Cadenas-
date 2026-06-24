@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int count[1000001];
+int Can[1000001];
 int main(){
     int n, c;
     cin >> n >> c;
@@ -8,11 +8,12 @@ int main(){
     for(int i = 0; i < c; i++){
         int v;
         cin >> v;
-        count[v] = count[v] + 1;
+        Can[v] = Can[v] + 1;
     }
+    cout<<"------------------------"<<endl;
 
     for(int i = 1; i <= n; i++){
-        cout << count[i] << "\n";
+        cout << Can[i] << "\n";
     }
 
 
