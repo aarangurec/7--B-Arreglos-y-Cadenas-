@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    char linea[105];
-    char letras[105];
+    char linea[99];
+    char letras[99];
     char temp;
     int len = 0;
     int cantidad = 0;
